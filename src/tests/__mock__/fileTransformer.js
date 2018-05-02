@@ -1,4 +1,5 @@
 // fileTransformer.js
+// can't go without it it sends the whole testing module out
 const path = require('path');
 
 module.exports = {
