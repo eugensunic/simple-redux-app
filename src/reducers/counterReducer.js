@@ -1,4 +1,4 @@
-import * as actions from '../actions/types';
+
 
 /**
  * Manages the counter value
@@ -9,12 +9,13 @@ import * as actions from '../actions/types';
  * @param {string} action used to identify which action to execute
  * @return {number} updated state
  */
-export default function counterReducer(state = 0, action) {
+export default function counterReducer(state = { counter: 0 }, action) {
+  console.log(state);
   switch (action.type) {
-    case actions.INCREMENT:
-      return state + 1;
-    case actions.DECREMENT:
-      return state - 1;
+    case 'INCREMENT':
+      return { ...state, counter: state.counter + 1 };
+    case 'DECREMENT':
+      return { ...state, counter: state.counter - 1 };
     default:
       return state;
   }

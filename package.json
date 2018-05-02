@@ -1,9 +1,9 @@
 {
   "name": "simple-redux-app",
   "version": "2.0.1",
-  "description": "react, react-router, hot-reload, sass.",
+  "description": "",
   "main": "index.js",
-  "author": "Francesco Agnoletto",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
